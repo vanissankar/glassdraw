@@ -4,11 +4,12 @@ import { X, HelpCircle } from 'lucide-react';
 
 const gestures = [
   {
-    section: 'Right Hand (Draw)',
+    section: 'Right Hand (Main)',
     items: [
-      { emoji: '☝️', gesture: 'Index finger up', action: 'Draw strokes' },
-      { emoji: '🤏', gesture: 'Pinch (thumb + index)', action: 'Erase nearby strokes' },
-      { emoji: '✊', gesture: 'Fist', action: 'Clear all' },
+      { emoji: '☝️', gesture: 'Index finger up', action: 'Draw lines' },
+      { emoji: '🤏', gesture: 'Pinch (thumb + index)', action: 'Grab & Move drawings' },
+      { emoji: '🖐️', gesture: 'Open palm', action: 'Eraser mode' },
+      { emoji: '✊', gesture: 'Fist', action: 'Safe mode (No action)' },
     ],
   },
   {
@@ -23,8 +24,8 @@ const gestures = [
     section: 'Tips',
     items: [
       { emoji: '💡', gesture: 'One hand only', action: 'Auto-assigned as draw hand' },
+      { emoji: '🧼', gesture: 'UI Eraser', action: 'Click the eraser tool to draw-erase' },
       { emoji: '📐', gesture: 'Release rotate', action: 'Snaps to nearest 45°' },
-      { emoji: '🌀', gesture: 'Release move', action: 'Slight inertia drift' },
     ],
   },
 ];

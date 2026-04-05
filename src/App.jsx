@@ -32,7 +32,7 @@ function App() {
 
   const [cameraVisible, setCameraVisible] = useState(true);
   const [gesturesEnabled, setGesturesEnabled] = useState(true);
-  const [isHelpOpen, setIsHelpOpen] = useState(false);
+  const [isHelpOpen, setIsHelpOpen] = useState(true);
 
   const canvasRef = useRef(null);
   const interpreter = useMemo(() => new GestureInterpreter(), []);
